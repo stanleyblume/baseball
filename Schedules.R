@@ -29,3 +29,5 @@ for (i in 1:length(level_ids)) {
   if (i == 1) {schedule <- df} else {schedule <- rbind(schedule, df, fill = TRUE)}
   print(i)
 }
+
+write_csv(schedule, file = "Data_Files//schedule.csv", col_names = T,na = "")
